@@ -8,28 +8,35 @@ This repository contains a modular, configuration-driven fishing evaluation skil
 
 ```text
 skills/fishing-report/
-├── README.md                  # Human setup guide & research prompts
-├── SKILL.md                   # Hermes Agent execution runtime
+├── README.md                          # Human setup guide & research prompts
+├── SKILL.md                           # Hermes Agent execution runtime
 └── config/
-    ├── locations.md           # Your target spots, coordinates & waterbody specs
-    ├── species.md             # Local target species, seasonal hatches & tactics
-    └── scoring-rules.md       # Safety limits & scoring matrix for your fishery
+    ├── locations.example.md           # Starter locations template
+    ├── species.example.md             # Starter species template
+    └── scoring-rules.example.md       # Starter safety & scoring rules template
 ```
 
 ---
 
 ## ⚙️ Installation Instructions
 
-### Step 1: Copy Configuration Templates
-Create your local configuration directory inside your Hermes skills workspace:
+### Step 1: Create Local Config & Copy Templates
+Create your local configuration directory inside your Hermes skills workspace and copy the starter template files into active `.md` config files:
+
 ```bash
+# Create local configuration directory
 mkdir -p ~/.hermes/skills/fishing-report/config
+
+# Copy starter templates to active config files
+cp skills/fishing-report/config/locations.example.md ~/.hermes/skills/fishing-report/config/locations.md
+cp skills/fishing-report/config/species.example.md ~/.hermes/skills/fishing-report/config/species.md
+cp skills/fishing-report/config/scoring-rules.example.md ~/.hermes/skills/fishing-report/config/scoring-rules.md
 ```
 
-### Step 2: Generate Your Local Configuration Files
-This skill requires localized rules regarding your target body of water, local target species, and environmental/safety limits.
+### Step 2: Populate Your Active Configuration Files
+Edit the newly created `locations.md`, `species.md`, and `scoring-rules.md` files with your local fishery details.
 
-Use the **Universal Deep Research Meta-Prompt** in the section below to automatically generate your tailored `locations.md`, `species.md`, and `scoring-rules.md` files.
+You can either edit them manually or use the **Universal Deep Research Meta-Prompt** in the section below to automatically generate customized content for your specific fishing spots.
 
 ---
 
@@ -81,46 +88,11 @@ Define numeric environmental safety limits and optimal conditions for this speci
 
 ## 📋 Starter Configuration Templates
 
-If you prefer to edit files manually without using the meta-prompt, use these starter formats:
+If you prefer to edit files manually without using the meta-prompt, reference the starter files in `config/*.example.md`:
 
-### `config/locations.md`
-```markdown
-# Target Fishing Locations
-
-| Location Name | Spot Lat/Lon | Waterbody / Gauge ID | Access / Logistics Notes |
-| :--- | :--- | :--- | :--- |
-| Pine River Gorge | 40.1234, -105.5678 | USGS Gauge #06714000 | Hike-in access. Wading staff recommended above 200 CFS. |
-| Blue Heron Lake | 34.5678, -84.1234 | Reservoir Level Grid B | Public boat ramp open year-round. Electric motor only. |
-```
-
-### `config/species.md`
-```markdown
-# Seasonal Species Profiles
-
-## Spring / Summer
-* **Primary Target:** Brown Trout (*Salmo trutta*)
-* **Tactics:** Late afternoon Mayfly hatches (Size 14-16 Parachute Adams). Target bubble lines and undercut banks.
-
-## Autumn / Winter
-* **Primary Target:** Rainbow Trout (*Oncorhynchus mykiss*)
-* **Tactics:** Deep nymphing with indicator rigs or slow-stripped streamer flies (Woolly Buggers) in deep pools.
-```
-
-### `config/scoring-rules.md`
-```markdown
-# Environmental & Safety Thresholds
-
-## Hard Disqualifiers
-* **Max Flow Rate / Discharge:** > 400 CFS (River too high/dangerous to wade)
-* **Max Sustained Wind:** > 25 knots
-* **Severe Weather:** Thunderstorms / Lightning probability > 40%
-
-## Scoring Matrix (10 Points Total)
-* **Atmospheric (3 pts):** Barometer falling (1008-1014 hPa) + Wind < 10kn = 3 pts | Neutral = 2 pts | Rising post-front = 0 pts
-* **Hydrological (3 pts):** Flow 150-250 CFS = 3 pts | 100-149 or 251-350 CFS = 2 pts | Blown out / Trickle = 0 pts
-* **Solunar & Lunar (2 pts):** New/Full Moon or Major Feeding Window = 2 pts | Minor Window = 1 pt | Off-peak = 0 pts
-* **Timing (2 pts):** Peak window aligns with Dawn/Dusk = 2 pts | Overcast daytime = 1 pt | Bright mid-day sun = 0 pts
-```
+* **[`config/locations.example.md`](config/locations.example.md)** — Starter template for target coordinates, gauge IDs, and access notes.
+* **[`config/species.example.md`](config/species.example.md)** — Starter template for seasonal species profiles, thermal zones, and tactics.
+* **[`config/scoring-rules.example.md`](config/scoring-rules.example.md)** — Starter template for environmental safety thresholds and the 10-point scoring matrix.
 
 ---
 
