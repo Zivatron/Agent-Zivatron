@@ -38,8 +38,10 @@ Cross-Verification: Anomaly detection automatically triggers targeted disproof q
 ## 📦 Prerequisites
 Python Environment: Requires duckduckgo_search for parallel search batching:
 
-Bash
+```Bash
 pip install duckduckgo_search
+```
+
 Agent Capabilities:
 
 Python Code Execution tool (execute_code)
@@ -51,9 +53,10 @@ Headless Browser tools (browser_navigate, browser_snapshot, browser_click)
 ## 🚀 Installation
 Clone the repository and copy the deep-research skill into your agent workspace:
 
-Bash
+```Bash
 git clone https://github.com/Zivatron/Agent-Zivatron.git
 cp -r Agent-Zivatron/skills/deep-research ~/.hermes/skills/
+```
 If loading dynamically into an active agent session, reference SKILL.md directly.
 
 ## 🎯 Usage & Triggers
