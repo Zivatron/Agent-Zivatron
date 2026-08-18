@@ -27,7 +27,7 @@ They address real-world local agent constraints, such as:
 | **[`weather`](skills/weather)** | Fetch weather & marine ocean conditions via Open-Meteo. | Zero-auth REST API queries, geocoding resolution, 14-day weather & 10-day swell/wave model reports. | Universal |
 | **[`fishing-report`](skills/fishing-report)** | Universal multi-waterbody fishing intelligence report generator. | 10-point environmental scoring matrix, hard safety disqualifiers, AI deep research setup prompt, mobile-friendly Discord/Telegram formatting. | Universal |
 | **[`lmstudio-vision-fix`](skills/lmstudio-vision-fix)** | Fixes HTTP 400 (`Invalid messages`) payload bugs. | Configures `agent.image_input_mode: native` for local vision models (Qwen, MLX) in LM Studio. | Universal |
-| **[`deep-research`]([skills/deep-research])** | Tiered Search Waterfall and Mandatory Fact Cross-Verification. | Credit & Budget Discipline and Anti-Pattern & Scraping Protections. | Universal |
+| **[`deep-research`]([skills/deep-research])** | An autonomous research pipeline. | Credit & Budget Discipline, Anti-Pattern & Scraping Protections, Tiered Search Waterfall, Mandatory Fact Cross-Verification, Domain Authority Escalation and Flexible Structured Synthesis. | Universal |
 
 ---
 
