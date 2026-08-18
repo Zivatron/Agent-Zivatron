@@ -67,7 +67,12 @@ Agent-Zivatron/
     ├── lmstudio-vision-fix/
     │   └── SKILL.md
     └── weather/
-        └── SKILL.md
+    |   └── SKILL.md
+    └── deep-research/
+    ├── SKILL.md                                  # Core agent instructions & pipeline definition
+    └── references/
+        ├── ddgs-python-library-workflow.md       # Fast parallel query execution patterns
+        └── curated-research-report-format.md     # Output templates for industry & policy briefings
 ```
 
 ---
