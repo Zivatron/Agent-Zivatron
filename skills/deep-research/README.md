@@ -70,7 +70,7 @@ Quick factual lookups or single-entity definitions.
 Simple code debugging or routine single-source queries.
 
 ## 📄 Output Formats
-Standard Synthesis Report: Executive summary, thematic analyses with inline citations ([1](https://github.com/Zivatron/Agent-Zivatron/blob/main/skills/deep-research/SKILL.md](https://github.com/Zivatron/Agent-Zivatron/blob/main/skills/deep-research/references/curated-research-report-format.md)), discrepancy tables, and a verified source registry.
+Standard Synthesis Report: Executive summary, thematic analyses with inline citations ([1])(https://github.com/Zivatron/Agent-Zivatron/blob/main/skills/deep-research/SKILL.md](https://github.com/Zivatron/Agent-Zivatron/blob/main/skills/deep-research/references/curated-research-report-format.md)), discrepancy tables, and a verified source registry.
 
 Curated Policy Briefing: Designed for institutional decision-makers, featuring 5 high-impact sources with relevance analysis and actionable organizational next steps (see references/curated-research-report-format.md).
 
